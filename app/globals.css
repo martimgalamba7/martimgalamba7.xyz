@@ -185,3 +185,74 @@ body {
   background: rgba(255, 255, 255, 0.05);
   transform: translateY(-2px);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1.5rem;
+    justify-content: center; /* More balanced centering on mobile */
+  }
+
+  .content-wrapper {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .name-title {
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .badge {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  .role-container {
+    font-size: 1rem;
+    height: auto;
+    min-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .social-link {
+    flex: 1 1 calc(50% - 0.5rem); /* Two columns on mobile */
+    min-width: 120px;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+
+  /* Handle the 3rd button to be full width if there's an odd number */
+  .social-link:last-child:nth-child(odd) {
+    flex: 1 1 100%;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 1.5rem;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .name-title {
+    font-size: 2rem;
+  }
+  
+  .social-link {
+    flex: 1 1 100%;
+  }
+}
