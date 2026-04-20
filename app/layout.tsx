@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Martim Galamba | Software & AI Engineer",
   description: "Official portfolio of Martim Galamba, an aspiring Software and AI Engineer. Currently under development.",
   keywords: ["Software Engineer", "AI Engineer", "Martim Galamba", "Portfolio", "Coming Soon"],
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
